@@ -14,13 +14,13 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../src'))
-sys.path.insert(0, os.path.abspath('../src/proto'))
+sys.path.insert(0, os.path.abspath('../srcs'))
+sys.path.insert(0, os.path.abspath('../srcs/proto'))
 sys.path.insert(0, os.path.abspath('../'))
-sys.path.insert(0, os.path.abspath('../src/core'))
+sys.path.insert(0, os.path.abspath('../srcs/lib'))
 
 #from mock import MagicMock
-from mock import Mock as MagicMock
+from unittest.mock import Mock as MagicMock
 
 class Mock(MagicMock):
     @classmethod
@@ -34,7 +34,7 @@ sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 project = u'Melody'
 copyright = u'2019, Project Moses'
-author = u'Kartik Palani, Vignesh Babu, Hoang Hai Nguyen, Elizabeth Reed, Rakesh Kumar'
+author = u'Vignesh Babu, Kartik Palani, Hoang Hai Nguyen, Elizabeth Reed, Rakesh Kumar'
 
 # The short X.Y version
 version = u'1.0'
@@ -88,7 +88,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'haiku'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

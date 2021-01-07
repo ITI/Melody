@@ -2,13 +2,15 @@ A TestBed which integrates Power System Simulation with Mininet to simulate a
 Micro Grid control Architecture. This TestBed will be used for 
 Anomaly Detection Purposes.
 
+Full documentation can be found [here](https://melody-by-projectmoses.readthedocs.io/).
+
 ```
 Dependencies:
 
 python-httplib2
-python-ryu-4.0 or above
+python-ryu
 ryu-bin and ryu-manager
-python 2.7
+python 3.7
 numpy
 pypcapfile
 openssh-server
@@ -37,8 +39,8 @@ Pre-Run Steps:
 
 - Setting up the python path
     - Add the following to ~/.bashrc
-      export PYTHONPATH=$PYTHONPATH:<path-to-melody>/src
-      export PYTHONPATH=$PYTHONPATH:<path-to-melody>/src/core
+      export PYTHONPATH=$PYTHONPATH:<path-to-melody>/srcs
+      export PYTHONPATH=$PYTHONPATH:<path-to-melody>/srcs/proto
 
     - Do the following
       sudo visudo
@@ -49,6 +51,11 @@ Pre-Run Steps:
 ```
 
 ```
-Find detailed documentation for the project at:
-https://melody-by-projectmoses.readthedocs.io/
+Copyright (c) 2020, Information Trust Institute
+All rights reserved.
+
+This source code is licensed under the BSD-style license found in the
+LICENSE file in the root directory of this source tree. 
+
 ```
+
